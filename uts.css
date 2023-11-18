@@ -523,11 +523,6 @@ padding: 8px;
   height: auto;
   width: 100%;
 }
-.kolom2 {
-  float: left;
-  width: 33.33%;
-  justify-content: center;
-}
 .kolom3 {
   float: left;
   width: 20%;
