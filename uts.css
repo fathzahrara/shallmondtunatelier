@@ -1,0 +1,758 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Header display gambar*/
+header { 
+    position: relative;
+    background-color: #ffffff;
+    background-image:url(images/ailelie.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    padding-top: 190px;
+    padding-bottom: 190px ;
+    font-weight: 800;
+    border-bottom: orange solid 5px;
+}
+header h1 {
+  font-size: 36px;
+  text-shadow: 2px 2px 5px black ;
+}
+
+
+/*navbar*/
+.navbar {
+  background-color: #FFA800;
+  line-height: 40px;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  z-index: 9999;
+  display: flex;
+}
+.header-navbar {
+  display: flex; 
+  align-items: right; 
+  width: 30%;
+  margin-right: 5px;
+}  
+.dmenu {
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    margin-left: 1px; 
+    justify-content: center;
+    place-items: left ;
+}
+.dmenu a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  text-align: left; 
+  margin-right: 0;
+}
+
+/* Style untuk submenu dropdown */
+.downMen {
+    display: none;
+    position: absolute;
+    background-color: orange;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.downMen a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.dmenu:hover .downMen {
+    display: block;
+}
+.downMen a:hover {
+    background-color: orangered; 
+    color: white; 
+}
+a {
+    text-decoration: none;
+}
+
+/*sidebar*/
+.sidebar {
+  height: 500px;
+  width: 150px;
+  position: fixed;
+  z-index: 9999;
+  display: block;
+  top: 85px;
+  bottom: 0px;
+  right: 0;
+  background: rgb(255, 230, 176);
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-top: 5px;
+  padding: 0;
+  justify-content: center;
+  border-radius: 25px 0 0 25px;
+  margin-right: 0px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  box-shadow:  inset 0 4px 0 0 white, 
+  inset 4px 0 0 0 white, 
+  inset 0 -4px 0 0 white; 
+  font-family: 'poppins';
+}
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "josefin",sans-serif;
+  color: orangered;
+  display: block;
+}
+.sidebar a:hover {
+  color: orange;
+}
+
+/*Body*/
+body {
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/sun-pattern.png);
+  background-repeat: repeat;
+}
+
+/*Slideshow*/
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  border-radius: 25px;
+}
+
+/*hide slides by default*/
+.mySlides {
+  display: none;
+}
+
+/*animasi fade*/
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+/*content area*/
+.main {
+  margin-right: 158px; 
+  font-size: 28px; 
+  padding: 0px 10px;
+  background-color: white;
+  background-size: contain;
+  border-top: orange 2px dashed;
+  border-bottom: orange 2px dashed;
+}
+.mainArticles {
+  margin-right: 158px; 
+  font-size: 28px; 
+  padding: 0px 10px;
+  background-size: contain;
+  margin-top: 15px; }
+
+  /*main page source*/
+.grid-container {
+  display: grid;
+  top: 5px;
+  bottom: 5px;
+  height: 85px;
+  width: 100%;
+  position: relative;
+  align-content: center, space-evenly;
+  grid-template-columns: auto auto ;
+  background-color: #ffd685;
+  padding: 20px;
+  border-bottom: orangered solid 1px;
+  border-radius: 25px;
+  gap: 50px 100px;
+}
+.grid-container2 {
+  display: grid;
+  top: 0px;
+  bottom: 5px;
+  height: auto;
+  width: 100%;
+  position: relative;
+  align-content: center, space-evenly;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 25px;
+}
+.grid-container2 h4 a{
+  font-family: 'Josefin', sans-serif;
+  color : red;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  display: inline-block;
+  position: relative;
+}
+.grid-container2 p {
+  font-family: helvetica;
+  font-size: 1rem;
+  text-align: justify;
+}
+.grid-container2 > div {
+  width: 85%;
+  background-color: #ffd685;
+  border-radius: 20px;
+  padding : 30px ;
+  border: white dashed 3px;
+  box-shadow: inset orange 0 3px 0, 
+  inset orange 3px 0 0,  inset orangered 0 -3px 0, inset -3px 0 0 orange  ;
+}
+.grid-container2  img {
+border-radius: 25px;
+text-align: center;
+width: 100%;
+}
+.grid-container > div {
+  text-align: left;
+  font-size: 30px;
+}
+.grid-container h3 {
+  font-family: 'Annie Use Your Telescope', sans-serif;
+  color : orangered;
+  text-shadow: white 2px 2px 1px ;
+  letter-spacing: 5px;
+}
+.grid-container3 {
+  display: grid;
+  top: 5px;
+  bottom: 5px;
+  height: auto;
+  width: 100%;
+  position: relative;
+  align-content: center, space-evenly;
+  grid-template-columns: auto auto ;
+  background-color: #ffd685;
+  padding: 20px;
+  border: rgb(255, 130, 85) dashed 1px;
+  border-radius: 25px;
+  gap: 50px 100px;
+}
+.grid-container3 > div {
+  text-align: left;
+  font-size: 30px;
+}
+/*Article Page Settings*/
+.mainArtc {
+  margin-right: 158px; 
+  margin-left: 12px;
+  font-size: 28px; 
+  padding: 0px 10px;
+  background-color: rgb(255, 214, 138) ;
+  margin-top: 10px;
+  background-size: contain;
+  border-top: orange 2px dashed;
+  border-bottom: orange 2px dashed;
+}
+.mainArtc img{
+width: 500px;
+border-radius: 25px;
+float: left;
+margin : 5px;
+padding: 8px;
+}
+.mainArtc P {
+  font-family: 'Poppins';
+  font-size: 16px;
+  text-align: justify;
+  margin : 10px;
+  word-spacing: 2px;
+}
+.wordspan{
+  font-weight: 700;
+  color: rgb(255, 0, 0);
+  font-style: italic;
+}
+.mainArtc h1{
+  font-size: 40px;
+  font-family: 'Poppins';
+  margin-top: 20px;
+  margin: 10px;
+  color: rgb(255, 60, 0);
+}
+.mainArtc h2{
+  font-size: 15px;
+  font-family: 'Poppins';
+  margin-top: 15px;
+  top: 0px;
+  margin-left: 10px;
+  color: rgb(255, 73, 41);
+}
+.mainArtc h3{
+  font-size: 15px;
+  font-family: 'Poppins';
+  margin-top: 0px;
+  top: 0px;
+  margin-left: 10px;
+  color: rgb(255, 73, 41);
+}
+/*Pengumuman Section*/
+.mainPeng {
+  margin-right: 158px; 
+  margin-left: 12px;
+  font-size: 28px; 
+  padding: 0px 10px;
+  background-color: rgb(255, 214, 138) ;
+  margin-top: 10px;
+  background-size: contain;
+  border-bottom: orange 2px dashed;
+  margin-bottom: 10px;
+}
+.mainPeng h1 {
+  font-size: 35px;
+  font-family: 'Poppins';
+  color: red;
+  margin-top: 20px;
+}
+.mainPeng img {
+  float: left;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.mainPeng p {
+  margin-right: 50px;
+  margin-top: 130px;
+  margin-bottom: 150px;
+  text-align: justify ;
+  font-size: 20px;
+  font-family: 'poppins';
+}
+.mainPeng a {
+  color: red;
+}
+.mainPeng2 {
+  margin-right: 158px; 
+  margin-left: 12px;
+  font-size: 28px; 
+  padding: 0px 10px;
+  background-color: rgb(255, 214, 138) ;
+  margin-top: 10px;
+  background-size: contain;
+  border-bottom: orange 2px dashed;
+  margin-bottom: 10px;
+}
+.mainPeng2 h1 {
+  font-size: 35px;
+  font-family: 'Poppins';
+  color: red;
+  margin-top: 30px;
+  top: 20px;
+}
+.mainPeng2 img {
+  float: left;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.mainPeng2 p {
+  margin-right: 130px;
+  margin-top: 200px;
+  margin-bottom: 190px;
+  text-align: justify ;
+  font-size: 20px;
+  font-family: 'poppins';
+}
+.mainPeng2 a {
+  color: red;
+}
+/*About Section*/
+.mainAbt {
+  margin-right: 158px; 
+  margin-left: 12px;
+  font-size: 28px; 
+  padding: 18px;
+  background-color: rgb(255, 214, 138) ;
+  margin-top: 10px;
+  background-size: contain;
+  border-top: orange 2px dashed;
+  border-bottom: orange 2px dashed;
+  font-family: 'Poppins';
+}
+.mainAbt hr {
+ border: solid white 1px;
+}
+.mainAbt h1 {
+  font-size: 40px;
+  text-align: left;
+  text-shadow: white 4px 4px 1px ;
+  color: rgb(255, 68, 0);
+}
+.mainAbt h2 {
+  font-size: 25px;
+  background-color: rgba(255, 166, 0, 0.603);
+  color: white;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.mainAbt h3 {
+  font-size: 18px;
+  text-decoration: underline;
+  color:rgb(255, 68, 0) ;
+}
+.mainAbt p {
+  font-family: 'Poppins';
+  font-size: 15px;
+  margin-right: 25px;
+  text-align: justify;
+  color:rgb(255, 73, 7) ;
+}
+#vm {
+  text-align: center;
+}
+
+/*Services Section*/
+.mainSr {
+  margin-right: 158px; 
+  margin-left: 12px;
+  font-size: 28px; 
+  padding: 18px;
+  background-color: rgb(255, 214, 138) ;
+  margin-top: 10px;
+  background-size: contain;
+  border-top: orange 2px dashed;
+  border-bottom: orange 2px dashed;
+  font-family: 'Poppins';
+}
+.mainSr h1 {
+  font-size: 40px;  
+  text-align: left;
+  text-shadow: white 4px 4px 1px ;
+  color: rgb(255, 68, 0);
+}
+.mainSr h2 {
+  font-size: 25px;
+  color: rgb(255, 68, 0);
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: underline wavy rgb(255, 160, 36) 2px;
+}
+.mainSr h3 {
+  font-size: 23px;
+  color: red;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.mainSr p {
+  text-align: center;
+  font-size: 20px;
+}
+.mainSr img {
+  border-radius: 15px;
+}
+
+/*Atelier Section*/
+.mainAte {
+  margin-right: 158px; 
+  margin-left: 12px;
+  font-size: 28px; 
+  padding: 18px;
+  background-color:#FFFB73 ;
+  margin-top: 10px;
+  background-size: contain;
+  border-radius: 20px;
+}
+.mainAte1 {
+  margin-right: 158px; 
+  margin-left: 12px;
+  font-size: 28px; 
+  padding: 18px;
+  background-color:#FFFB73 ;
+  margin-top: 10px;
+  background-size: contain;
+  border-bottom: rgb(255, 255, 255) 4px solid;
+  border-radius: 20px;
+}
+.mainAte1 h1{
+  font-size: 40px;  
+  text-align: left;
+  text-shadow: rgb(255, 255, 255) 4px 4px 1px ;
+  color: rgb(255, 115, 0);
+  font-family: 'Poppins';
+  letter-spacing: 2px;
+}
+.mainAte h2{
+  font-size: 30px;
+  color: rgb(255, 68, 0);
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: underline wavy rgb(255, 160, 36) 2px;
+  text-align: left;
+  font-family: 'Annie Use Your Telescope';
+}
+.mainAte p {
+  font-family: 'poppins';
+  font-size: 15px;
+  word-spacing: 1px;
+  margin-top: 8px;
+  text-align: justify;
+}
+/*Portfolio grids*/
+.kolom {
+  float: left;
+  width: 50%;
+  justify-content: center;
+}
+.kolom2 {
+  float: left;
+  width: 33.33%;
+  justify-content: center;
+}
+.kolom3 {
+  float: left;
+  width: 20%;
+  justify-content: center;
+}
+.baris,
+.baris > .kolom {
+  padding: 10px;
+}
+.baris:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.konten {
+  background-color: white;
+  padding: 30px;
+  width: 100%;
+  padding-top: 20px;
+  border: orange dashed 1px;
+}
+.konten img{
+  height: auto;
+  width: 100%;
+}
+.konten3 img{
+  height: auto;
+  width: 100%;
+}
+
+.konten2 {
+  background-color: white;
+  padding: 30px;
+  width: 100%;
+  padding-top: 20px;
+  border: orange dashed 1px;
+}
+.konten3 {
+  background-color: white;
+  padding: 20px;
+  width: 80%;
+  padding-top: 20px;
+  border: orange dashed 1px;
+  margin-left: 35px;
+  margin-right: 5px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.backgroundSet {
+  top: 5px;
+  bottom: 5px;
+  height: auto;
+  width: 100%;
+  position: relative;
+  align-content: center, space-evenly;
+  grid-template-columns: auto ;
+  background-color: #ffd685;
+  padding: 20px;
+  border: rgb(255, 130, 85) dashed 1px;
+  border-radius: 25px;
+}
+
+/*Registration area*/
+.mainReg {
+  margin-right: 158px; 
+  margin-left: 12px;
+  font-size: 28px; 
+  padding: 18px;
+  background-image: url(images/whdr\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+}
+.KontainerReg {
+  margin: 20px;
+  max-width: 200px;
+  padding: 16px;
+  background-color: rgb(255, 245, 154);
+  top: 60px;
+}
+
+.KolomReg {
+  width: 100%;
+  padding: 8px;
+  font-family: 'Poppins';
+}
+.harga {
+  list-style-type: none;
+  border: 1px solid #f8cb00;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+}
+.harga .header {
+  background-color: #ff0000;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-family: 'Poppins';
+}
+/* List items di dalam kontainer */
+.harga li {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Hrg list item */
+.harga .hrg {
+  background-color: #ffffff;
+  font-size: 20px;
+}
+
+/*form settings*/
+.KontainerReg2 {
+  padding: 16px;
+  max-width: 400px;
+  background-color: rgb(255, 255, 255);
+  top: 0px;
+  font-size: 15px;
+  box-shadow: inset rgba(255, 168, 6, 0.322) 0 0 0 2px;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: rgb(221, 221, 221);
+  outline: none;
+}
+.registerbtn {
+  background-color: orange;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+/*Contact Menu*/
+.mainCtc {
+  margin-right: 158px; 
+  margin-left: 12px;
+  font-size: 28px; 
+  padding: 18px;
+  background-image: url(images/whdr\ \(1\).png);
+  background-size: contain;
+  height: 100%;
+  background-repeat: repeat-x;
+}
+.mainCtc img{
+  width: 80%;
+  position: relative;
+  margin-top: 0;
+}
+.mainCtc h1 {
+  font-size: 40px;
+  font-family: 'Poppins';
+  text-align: left;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  text-shadow: rgb(255, 145, 0) 4px 4px 1px ;
+  margin-left: 0;
+}
+.mainCtc table {
+  width: 100%;
+}
+.mainCtc table tr td {
+  width: 50%;
+}
+.ctcinfo {
+  display: flex;
+  position: relative;
+  font-family: 'poppins';
+  font-size: 15px;
+  font-weight: 700;
+  background-color: white;
+  background-size: contain;
+}
+.ctcinfo a {
+  color : orangered
+}
+.ctcinfo :hover {
+  color: #f8cb00;
+}
+/*Footer*/
+footer {
+  background-color: orange;
+  text-align: center;
+  font-weight: bold; 
+  font-family: 'poppins'; 
+  color: white; 
+  padding: 10px; 
+  margin-top: 100px;
+  font-size: 10px;
+}
+footer a{
+  color: red;
+  margin-left: 3px;
+}
+/*Font*/
+.Annie {
+    font-family: 'Annie Use Your Telescope', serif ;font-size: 28px; letter-spacing: 3px; font-weight: bold;
+}
+.AnnieTwo {
+  font-family: 'Annie Use Your Telescope', serif ;font-size: 18px; letter-spacing: 3px; font-weight: bold;
+}
+.josefin {font-family: "Josefin", sans-serif;font-size: 15px; letter-spacing: 2px; font-weight: bold;
+}
+.josefinTwo {font-family: "Josefin", sans-serif;font-size: 13px; letter-spacing: 1px; padding: 5px;
+}
+
+/*customized*/
+.icons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 3px;
+}
+.Intro {
+  font-family: 'Annie Use Your Telescope', serif ;font-size: 20px; letter-spacing: 3px; font-weight: bold; color: orangered;
+}
+.IntroIn {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50%;
+}
