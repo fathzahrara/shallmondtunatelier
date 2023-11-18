@@ -545,6 +545,10 @@ padding: 8px;
   padding-top: 20px;
   border: orange dashed 1px;
 }
+.konten img{
+  height: auto;
+  width: 100%;
+}
 .konten2 {
   background-color: white;
   padding: 30px;
